@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerry & Michelle Pre-wedding Photos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            margin-top: 20px;
+            color: #333;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        #back-to-top:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jerry & Michelle Pre-wedding Photos</h1>
+    <div class="gallery">
+        <img src=".\PIC\1.jpg" alt="圖片1">
+        <img src=".\PIC\2.jpg" alt="圖片2">
+        <img src=".\PIC\3.jpg" alt="圖片3">
+        <img src=".\PIC\4.jpg" alt="圖片4">
+        <img src=".\PIC\5.jpg" alt="圖片5">
+        <img src=".\PIC\6.jpg" alt="圖片6">
+        <img src=".\PIC\7.jpg" alt="圖片7">
+        <img src=".\PIC\8.jpg" alt="圖片8">
+        <img src=".\PIC\9.jpg" alt="圖片9">
+        <img src=".\PIC\10.jpg" alt="圖片10">
+        <img src=".\PIC\11.jpg" alt="圖片11">
+        <img src=".\PIC\12.jpg" alt="圖片12">
+        <img src=".\PIC\13.jpg" alt="圖片13">
+        <img src=".\PIC\14.jpg" alt="圖片14">
+        <img src=".\PIC\15.jpg" alt="圖片15">
+        <img src=".\PIC\16.jpg" alt="圖片16">
+        <img src=".\PIC\17.jpg" alt="圖片17">
+        <img src=".\PIC\18.jpg" alt="圖片18">
+        <img src=".\PIC\19.jpg" alt="圖片19">
+        <img src=".\PIC\20.jpg" alt="圖片20">
+        <img src=".\PIC\21.jpg" alt="圖片21">
+        <img src=".\PIC\22.jpg" alt="圖片22">
+        <img src=".\PIC\23.jpg" alt="圖片23">
+        <img src=".\PIC\24.jpg" alt="圖片24">
+        <img src=".\PIC\25.jpg" alt="圖片25">
+        <img src=".\PIC\26.jpg" alt="圖片26">
+        <img src=".\PIC\27.jpg" alt="圖片27">
+        <img src=".\PIC\28.jpg" alt="圖片28">
+        <img src=".\PIC\29.jpg" alt="圖片29">
+        <img src=".\PIC\30.jpg" alt="圖片30">
+        <img src=".\PIC\31.jpg" alt="圖片31">
+        <img src=".\PIC\32.jpg" alt="圖片32">
+    </div>
+    <button id="back-to-top" onclick="scrollToTop()">↑</button>
+    <script>
+        window.onscroll = function() {
+            var button = document.getElementById("back-to-top");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</body>
+</html>
